@@ -1,7 +1,17 @@
+---
+import Button from "./Button.astro";
+---
+
 <div class="flex flex-col min-h-screen justify-center mt-5 p-5">
     <h1 class="text-5xl max-w-sm"><span class="text-gray-600">Sergey</span> <span class="font-bold">Chernyavskiy</span></h1>
     <p class="capitalize text-2xl font-light text-gray-500 mt-5">Front-end Developer</p>
     <p class="mt-10 leading-8 max-w-sm text-gray-800 text-lg">
         I'm a web dev located in Russia. Wanna make a cool web app or create a stunning design? Hit me up, I'd love to connect. 
     </p>
+    <Button 
+        type={'btn-secondary'} 
+        text={'Check out my works'} 
+        width={'w-48'}
+        margin={'mt-8'}
+    />
 </div>
