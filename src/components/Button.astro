@@ -2,7 +2,7 @@
 const { href, type, text, classes} = Astro.props
 ---
 
-<a href={href} target="_blank" rel="noreferrer"
+<a href={href} rel="noreferrer"
     class={`btn btn-${type} ${classes}`}>
     {text}
 </a>
