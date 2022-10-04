@@ -1,5 +1,8 @@
 ---
-const { type, text, width, margin} = Astro.props
+const { type, text, classes} = Astro.props
 ---
 
-<button class={`btn ${type} ${width} ${margin}`}>{text}</button>
+<button 
+    class={`btn btn-${type} ${classes}`}>
+    {text}
+</button>
