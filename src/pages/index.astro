@@ -1,8 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+
+const info = {
+	firstName: 'Sergey',
+	lastName: 'Chernyavskiy',
+	title: 'Front-end Developer',
+	text: "I'm a web dev based in Russia. Wanna make a cool web app or create a stunning design? Hit me up, I'd love to connect."
+}
 ---
 
 <Layout>
-	<Hero />
+	<Hero 
+		firstName={info.firstName}
+		lastName={info.lastName}
+		title={info.title}
+		text={info.text}
+	/>
 </Layout>
