@@ -13,12 +13,13 @@ const { firstName, lastName, title, text} = Astro.props
         {text} 
     </p>
     <div class="flex items-center mt-8 gap-2 md:flex-col">
-        <Button 
+        <Button
             type={'secondary'} 
             text={'See my projects'}
             classes={'shadow-lg shadow-secondary/50'}
         />
         <Button 
+            href={'/contact'} 
             type={'ghost'}
             text={'Contact'}
         />
