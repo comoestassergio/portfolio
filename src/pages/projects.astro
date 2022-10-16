@@ -8,28 +8,20 @@ const projects = [
         descriptionShort: 'An easy to use resume creator',
         descriptionFull: 'It is an easy to use résumé constructor. It walks you through all the steps and gives a complete CV at the end. You can save it as a PDF and use to apply for your dream job.',
         slogan: 'Creating résumés made as easy as never before.',
-        stack: ['React', 'TailwindCSS', 'DaisyUI']
+        stack: ['React', 'TailwindCSS', 'DaisyUI'],
+        preview: 'https://resumatiq.netlify.app/',
+        code: 'https://github.com/comoestassergio/resume-creator',
+        image: '../../public/assets/resumatiq.png',
     },
     {
-        name: 'Resumatiq',
-        descriptionShort: 'An easy to use resume creator',
-        descriptionFull: 'It is an easy to use résumé constructor. It walks you through all the steps and gives a complete CV at the end. You can save it as a PDF and use to apply for your dream job.',
-        slogan: 'Creating résumés made as easy as never before.',
-        stack: ['React', 'TailwindCSS', 'DaisyUI', 'Next.js', 'SASS', 'Laravel']
-    },
-    {
-        name: 'Resumatiq',
-        descriptionShort: 'An easy to use resume creator',
-        descriptionFull: 'It is an easy to use résumé constructor. It walks you through all the steps and gives a complete CV at the end. You can save it as a PDF and use to apply for your dream job.',
-        slogan: 'Creating résumés made as easy as never before.',
-        stack: ['React', 'TailwindCSS', 'DaisyUI']
-    },
-    {
-        name: 'Resumatiq',
-        descriptionShort: 'An easy to use resume creator',
-        descriptionFull: 'It is an easy to use résumé constructor. It walks you through all the steps and gives a complete CV at the end. You can save it as a PDF and use to apply for your dream job.',
-        slogan: 'Creating résumés made as easy as never before.',
-        stack: ['React', 'TailwindCSS', 'DaisyUI']
+        name: 'Rice&Fish',
+        descriptionShort: "It's a restaurant in my hometown",
+        descriptionFull: 'Their business is quite small and lacking a website. So I figured I could make one as one of my projects. The page is an SPA with all its content rendered into one page. I made the rendering look and feel as close to rendering components in React as I could.',
+        slogan: null,
+        stack: ['HTML', 'CSS', 'Javascript', 'Webpack'],
+        preview: 'https://riceandfish.netlify.app/',
+        code: 'https://github.com/comoestassergio/restaurant-page',
+        image: '../../public/assets/riceandfish.png',
     },
 ]
 ---
@@ -43,6 +35,9 @@ const projects = [
                 descriptionFull={project.descriptionFull} 
                 slogan={project.slogan} 
                 stack={project.stack} 
+                code={project.code}
+                preview={project.preview}
+                image={project.image}
             />
         ))}
     </ul>
