@@ -1,10 +1,13 @@
 ---
 import Button from '../components/Button.astro'
-const { name, descriptionShort, descriptionFull, slogan, stack, href } = Astro.props;
+const { name, descriptionShort, descriptionFull, slogan, stack, code, preview, image } = Astro.props;
 ---
 
-<li class="card w-full bg-base-100 shadow-xl md:w-96">
-	<div class="card-body">
+<li class="card w-full bg-base-100 shadow-xl lg:w-1/2">
+	{image && 
+		<figure><img class="object-cover w-full h-72 scale-150 md:scale-125 " src={image} alt={name}/></figure>
+	}
+	<div class="card-body bg-white z-10">
 	  <h2 class="card-title">{name}</h2>
 	  <p class="text-sm italic text-gray-600">'{slogan}'</p>
 	  <p class="my-3 leading-7 text-gray-800">{descriptionFull}</p>
@@ -14,9 +17,9 @@ const { name, descriptionShort, descriptionFull, slogan, stack, href } = Astro.p
 			<li class="px-2 py-1 border-2 border-gray-300 rounded-lg text-gray-600">{el}</li>
 		))}
 	  </ul>
-	  <div class="card-actions justify-end mt-3">
-		<Button text={'Live preview'} styles={'btn-accent'}/>
-		<Button type={'link'} text={'Code'} />
+	  <div class="card-actions justify-start mt-3 md:justify-end">
+		<Button href={preview} text={'Live preview'} classes={'btn-accent'} target={'__blank'}/>
+		<Button href={code} text={'Code'} classes={'btn-ghost'} target={'__blank'}/>
 	  </div>
 	</div>
 </li>
