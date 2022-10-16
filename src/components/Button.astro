@@ -3,6 +3,6 @@ const { href, type, text, classes} = Astro.props
 ---
 
 <a href={href} rel="noreferrer"
-    class={`btn btn-${type} ${classes}`}>
+    class={`btn ${classes}`}>
     {text}
 </a>
