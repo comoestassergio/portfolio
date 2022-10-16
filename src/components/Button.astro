@@ -1,8 +1,8 @@
 ---
-const { href, type, text, classes} = Astro.props
+const { href, type, text, classes, target} = Astro.props
 ---
 
-<a href={href} rel="noreferrer"
+<a href={href} rel="noreferrer" target={target}
     class={`btn ${classes}`}>
     {text}
 </a>
