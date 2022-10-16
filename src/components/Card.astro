@@ -9,7 +9,7 @@ const { name, descriptionShort, descriptionFull, slogan, stack, code, preview, i
 	}
 	<div class="card-body bg-white z-10">
 	  <h2 class="card-title">{name}</h2>
-	  <p class="text-sm italic text-gray-600">'{slogan}'</p>
+	  <p class="text-sm italic text-gray-600">'{slogan ?? descriptionShort}'</p>
 	  <p class="my-3 leading-7 text-gray-800">{descriptionFull}</p>
 	  <p class="text-gray-500">Made with:</p>
 	  <ul class="flex flex-wrap gap-2">
